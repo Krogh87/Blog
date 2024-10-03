@@ -1,14 +1,26 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
     line-height: 1.6;
     margin: 0;
     padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 header {
-    background: #007BFF;
+    background: #e58b00; /* Warm gold color */
     color: white;
-    padding: 10px 20px;
+    padding: 20px;
     text-align: center;
 }
 
@@ -19,7 +31,7 @@ nav ul {
 
 nav ul li {
     display: inline;
-    margin: 0 10px;
+    margin: 0 15px;
 }
 
 nav a {
@@ -28,14 +40,17 @@ nav a {
 }
 
 main {
+    flex: 1; /* This makes the main content area take up available space */
     padding: 20px;
+}
+
+h2 {
+    color: #d75a00; /* A darker warm color */
 }
 
 footer {
     text-align: center;
     padding: 10px 0;
     background: #f4f4f4;
-    position: relative;
-    bottom: 0;
-    width: 100%;
+    margin-top: auto; /* Keeps the footer at the bottom */
 }
